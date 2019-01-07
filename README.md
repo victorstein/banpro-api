@@ -2,7 +2,7 @@
 
 [![GitHub version](https://badge.fury.io/gh/boennemann%2Fbadges.svg)](http://badge.fury.io/gh/boennemann%2Fbadges)
 
-<img width="30" height="30" src="https://cdn.rawgit.com/standard/standard/master/sticker.svg" />
+<img width="60" height="60" src="https://cdn.rawgit.com/standard/standard/master/sticker.svg" />
 
 This is a simple GraphQL API that removes the inconvenience of using the softkeyboard from the Banpro website and retreives basic information from the account.
 
