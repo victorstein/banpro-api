@@ -1,0 +1,53 @@
+{
+  "name": "banpro-api",
+  "version": "1.0.0",
+  "description": "A simple api to serve banpro authentication",
+  "main": "server.js",
+  "scripts": {
+    "dev": "webpack | nodemon dist/server.bundle.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorstein/banpro-api.git"
+  },
+  "keywords": [
+    "banpro",
+    "nicaragua",
+    "Alfonso",
+    "Gomez",
+    "Javascript",
+    "Nicaragua",
+    "Banpro",
+    "API"
+  ],
+  "nodemonConfig": {
+    "ignore": [
+      "src/*"
+    ]
+  },
+  "author": "Alfonso Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorstein/banpro-api/issues"
+  },
+  "homepage": "https://github.com/victorstein/banpro-api#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "apollo-server-express": "^2.3.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "puppeteer": "^1.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.18.9",
+    "standard": "^12.0.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
