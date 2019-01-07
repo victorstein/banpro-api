@@ -4,6 +4,7 @@
   "description": "A simple api to serve banpro authentication",
   "main": "server.js",
   "scripts": {
+    "start": "node dist/server.bundle.js",
     "dev": "webpack | nodemon dist/server.bundle.js",
     "build": "webpack"
   },
