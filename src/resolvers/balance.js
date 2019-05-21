@@ -5,8 +5,9 @@ export default {
   Query: {
     requestBalance: async (root, { username, password }, context, info) => {
       // Create instances of puppeter browser and page
-      const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] })
+      const browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox'] })
       const page = await browser.newPage()
+
       try {
         // Navigate to the login page
         await page.goto('https://www.banpro.com.ni/banproenlinea/loginNIC.asp?SourcePage=')

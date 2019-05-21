@@ -1,0 +1,6 @@
+{
+  "name": "banpro-api",
+  "builds": [
+    { "src": "dist/server.bundle.js", "use": "@now/node" }
+  ]
+}

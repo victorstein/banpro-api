@@ -17,15 +17,18 @@ const { PORT, NODE_ENV } = process.env;
     const server = new ApolloServer({
       typeDefs,
       resolvers,
-      playground: NODE_ENV !== 'production',
-      debug: NODE_ENV !== 'production'
+      playground: NODE_ENV === 'development',
+      debug: NODE_ENV === 'development'
     })
+
+    // Create express app
     const app = express()
     server.applyMiddleware({ app })
 
     // Disable powered by header
     app.disable('x-powered-by')
 
+    // Run the server
     app.listen({ port: PORT }, () =>
       console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`)
     )
