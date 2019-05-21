@@ -1,6 +1,17 @@
 {
   "name": "banpro-api",
+  "version": 2,
+  "env": {
+    "PORT": "4000",
+    "SECRET": "development"
+  },
+  "build": {
+    "env": {
+      "PORT": "4000",
+      "SECRET": "development"
+    }
+  },
   "builds": [
-    { "src": "dist/server.bundle.js", "use": "@now/node" }
+    { "src": "src/server.js", "use": "@now/node" }
   ]
 }
